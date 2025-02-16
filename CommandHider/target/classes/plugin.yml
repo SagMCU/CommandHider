@@ -1,0 +1,19 @@
+name: CommandHider
+version: 1.0
+main: com.sagmcu.CommandHider.Main
+api-version: 1.21
+
+commands:
+  commandhider:
+    description: Reloads the plugin configuration
+    usage: /commandhider reload
+    permission: commandhider.admin
+    permission-message: "You do not have permission to use this command."
+
+permissions:
+  commandhider.admin:
+    description: Allows using the reload command.
+    default: op
+  commandhider.TabCompletionFilter.exempt:
+    description: Players with this permission are exempt from the TabCompletionFilter.
+    default: op

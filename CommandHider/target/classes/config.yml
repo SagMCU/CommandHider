@@ -1,0 +1,43 @@
+# CommandHider plugin config - 1.0
+# Messages
+messages:
+  reload_success: "&dCommandHider &econfiguration reloaded &asuccessfully&e."
+  no_permission: "&cYou do not have permission to use this command."
+  not_a_player: "&cThis command can only be used by a player."
+
+# TabCompletionFilter - If disabled this won't do anything.
+# If enabled all commands will disappear from command suggestions and tab autocompletion except for the ones in the
+# whitelist, adding a command will also add all subcommands automatically.
+# This filter won't affect players with the permission commandhider.tabcompletionfilter.exempt
+TabCompletionFilter:
+  enabled: true
+
+# This whitelist will affect all players unless they have the exempt permission or a custom whitelist
+# permission, where default_whitelist is set to false.
+  default_whitelist:
+    - "spawn"
+    - "msg"
+    - "tell"
+    - "warp"
+    - "tpa"
+    - "tpaccept"
+
+# Here you can add custom permissions to add or limit more the whitelist for some players.
+# If include_default is set to true it means that players with this permission will be affected by the default whitelist + that whitelist.
+# If set to false they will only be affected by the custom whitelist.
+# You can delete all the custom whitelists by just leaving "custom_whitelists: []"
+# You can also add as many custom whitelists as you want.
+  custom_whitelists:
+    - permission: "commandhider.custom.1"
+      commands:
+        - "customcommand_1"
+        - "customcommand_2"
+      include_default: true
+      
+
+    - permission: "commandhider.custom.2"
+      commands:
+        - "onlycustomcommand"
+      include_default: false
+   
+# End of config.

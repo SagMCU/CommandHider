@@ -1,0 +1,17 @@
+com\sagmcu\CommandHider\bstats\Metrics.class
+com\sagmcu\CommandHider\bstats\Metrics$JsonObjectBuilder$JsonObject.class
+com\sagmcu\CommandHider\Main.class
+com\sagmcu\CommandHider\bstats\Metrics$DrilldownPie.class
+com\sagmcu\CommandHider\utils\ChatColorTranslator.class
+com\sagmcu\CommandHider\utils\TabCompletionFilter.class
+com\sagmcu\CommandHider\bstats\Metrics$SimpleBarChart.class
+com\sagmcu\CommandHider\bstats\Metrics$MultiLineChart.class
+com\sagmcu\CommandHider\bstats\Metrics$AdvancedBarChart.class
+com\sagmcu\CommandHider\utils\TabCompletionFilter$CustomWhitelist.class
+com\sagmcu\CommandHider\bstats\Metrics$SimplePie.class
+com\sagmcu\CommandHider\commands\ReloadCommand.class
+com\sagmcu\CommandHider\bstats\Metrics$CustomChart.class
+com\sagmcu\CommandHider\bstats\Metrics$SingleLineChart.class
+com\sagmcu\CommandHider\bstats\Metrics$MetricsBase.class
+com\sagmcu\CommandHider\bstats\Metrics$AdvancedPie.class
+com\sagmcu\CommandHider\bstats\Metrics$JsonObjectBuilder.class
