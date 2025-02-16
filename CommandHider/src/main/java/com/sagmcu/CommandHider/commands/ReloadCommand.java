@@ -20,16 +20,9 @@ public class ReloadCommand implements CommandExecutor {
 
         String reloadSuccessMessage = plugin.getConfig().getString("messages.reload_success");
         String noPermissionMessage = plugin.getConfig().getString("messages.no_permission");
-        String notAPlayerMessage = plugin.getConfig().getString("messages.not_a_player");
 
         reloadSuccessMessage = ChatColorTranslator.translate(reloadSuccessMessage);
         noPermissionMessage = ChatColorTranslator.translate(noPermissionMessage);
-        notAPlayerMessage = ChatColorTranslator.translate(notAPlayerMessage);
-
-        if (!(sender instanceof Player)) {
-            sender.sendMessage(notAPlayerMessage);
-            return false;
-        }
 
         Player player = (Player) sender;
 
