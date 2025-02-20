@@ -1,4 +1,4 @@
-# CommandHider plugin config - 1.0.1
+# CommandHider plugin config - 1.0.2
 # Messages
 messages:
   reload_success: "&dCommandHider &econfiguration reloaded &asuccessfully&e."

@@ -1,5 +1,5 @@
 name: CommandHider
-version: 1.0
+version: 1.0.2
 main: com.sagmcu.CommandHider.Main
 api-version: 1.21
 
