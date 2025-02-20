@@ -36,7 +36,7 @@ public class ReloadCommand implements CommandExecutor {
             if (plugin.getTabCompletionFilter() != null) {
                 plugin.getTabCompletionFilter().reloadConfig();
             }
-            player.sendMessage(reloadSuccessMessage);
+            sender.sendMessage(reloadSuccessMessage);
             return true;
         }
 
