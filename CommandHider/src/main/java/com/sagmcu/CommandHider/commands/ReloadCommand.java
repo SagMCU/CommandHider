@@ -24,7 +24,8 @@ public class ReloadCommand implements CommandExecutor {
         reloadSuccessMessage = ChatColorTranslator.translate(reloadSuccessMessage);
         noPermissionMessage = ChatColorTranslator.translate(noPermissionMessage);
 
-        Player player = (Player) sender;
+        if (sender instanceof Player) {
+            Player player = (Player) sender;
 
         if (!player.hasPermission("commandhider.admin")) {
             player.sendMessage(noPermissionMessage);
@@ -36,9 +37,20 @@ public class ReloadCommand implements CommandExecutor {
             if (plugin.getTabCompletionFilter() != null) {
                 plugin.getTabCompletionFilter().reloadConfig();
             }
+            player.sendMessage(reloadSuccessMessage);
+            return true;
+        }
+    }
+        else {
+            if (args.length == 1 && args[0].equalsIgnoreCase("reload")) {
+            plugin.reloadConfig();
+            if (plugin.getTabCompletionFilter() != null) {
+                plugin.getTabCompletionFilter().reloadConfig();
+            }
             sender.sendMessage(reloadSuccessMessage);
             return true;
         }
+    }
 
         return false;
     }
