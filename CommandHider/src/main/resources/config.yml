@@ -1,4 +1,4 @@
-# CommandHider plugin config - 1.0.2
+# CommandHider plugin config - 1.2
 # Messages
 messages:
   reload_success: "&dCommandHider &econfiguration reloaded &asuccessfully&e."
@@ -29,14 +29,14 @@ TabCompletionFilter:
   custom_whitelists: []
 # Custom whitelists examples.
 
-#    - permission: "kirosutilities.custom.1"
+#    - permission: "commandhider.custom.1"
 #      commands:
 #        - "customcommand_1"
 #        - "customcommand_2"
 #      include_default: true
       
 
-#    - permission: "kirosutilities.custom.2"
+#    - permission: "commandhider.custom.2"
 #      commands:
 #        - "onlycustomcommand"
 #      include_default: false
