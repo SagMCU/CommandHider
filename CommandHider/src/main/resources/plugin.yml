@@ -18,3 +18,4 @@ permissions:
   commandhider.TabCompletionFilter.exempt:
     description: Players with this permission are exempt from the TabCompletionFilter.
     default: op
+    
