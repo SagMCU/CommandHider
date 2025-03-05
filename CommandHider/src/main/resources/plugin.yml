@@ -1,7 +1,8 @@
 name: CommandHider
-version: 1.0.2
+version: 1.2
 main: com.sagmcu.CommandHider.Main
-api-version: 1.21
+api-version: 1.13
+softdepend: [ProtocolLib]
 
 commands:
   commandhider:
